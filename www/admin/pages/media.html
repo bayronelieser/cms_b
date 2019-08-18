@@ -28,62 +28,79 @@
 
         <!-- Sidebar -->
         <div class="bg-light border-right" id="sidebar-wrapper">
-                <div class="sidebar-heading">
-                    <img id="logo" src="../img/logo.png" alt="" class="rounded-circle">
-                </div>
-                <div class="list-group list-group-flush">
-                    <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-                </div>
-                <ul class="list-unstyled components">
-                    <li class="active">
-                        <a href="#homeEntradas" data-toggle="collapse" aria-expanded="false"
-                            class=" bg-light list-group-item list-group-item-action dropdown-toggle">Entradas</a>
-                        <ul class="collapse list-unstyled" id="homeEntradas">
-                            <li class="bg-light">
-                                <a class="list-group-in list-group-item list-group-item-action"  href="#">Todas</a>
-                            </li>
-                            <li class="bg-light">
-                                <a class="list-group-in list-group-item list-group-item-action"  href="newentrada.html">Nueva</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="active">
-                        <a href="#subMenuPaginas" data-toggle="collapse" aria-expanded="false"
-                            class=" bg-light list-group-item list-group-item-action dropdown-toggle">Paginas</a>
-                        <ul class="collapse list-unstyled" id="subMenuPaginas">
-                            <li class="bg-light">
-                                <a class="list-group-in list-group-item list-group-item-action" href="#">Todas</a>
-                            </li>
-                            <li class="bg-light">
-                                <a class="list-group-in list-group-item list-group-item-action" href="">Nueva</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="active">
-                        <a href="#subMenuUsers" data-toggle="collapse" aria-expanded="false"
-                            class=" bg-light list-group-item list-group-item-action dropdown-toggle">Usuarios</a>
-                        <ul class="collapse list-unstyled" id="subMenuUsers">
-                            <li class="bg-light">
-                                <a class="list-group-in list-group-item list-group-item-action" href="#">Todas</a>
-                            </li>
-                            <li class="bg-light">
-                                <a class="list-group-in list-group-item list-group-item-action" href="newuser.html">Nuevo</a>
-                            </li>
-                        </ul>
-                    </li>
-    
-                    <li>
-                        <a class="list-group-item list-group-item-action" href="media.html">Medios</a>
-                    </li>
-                    <li class="bg-light">
-                        <a class="list-group-item list-group-item-action"  href="#">Shortcuts</a>
-                    </li>
-    
-                    <li class="bg-light">
-                        <a class="list-group-item list-group-item-action"  href="#">Comentarios</a>
-                    </li>
-                </ul>
+            <div class="sidebar-heading">
+                <img id="logo" src="../img/logo.png" alt="" class="rounded-circle">
             </div>
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+            </div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeEntradas" data-toggle="collapse" aria-expanded="false"
+                        class=" bg-light list-group-item list-group-item-action dropdown-toggle">Entradas</a>
+                    <ul class="collapse list-unstyled" id="homeEntradas">
+                        <li class="bg-light">
+                            <a class="list-group-in list-group-item list-group-item-action" href="#">Todas</a>
+                        </li>
+                        <li class="bg-light">
+                            <a class="list-group-in list-group-item list-group-item-action"
+                                href="newentrada.html">Nueva</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#subMenuPaginas" data-toggle="collapse" aria-expanded="false"
+                        class=" bg-light list-group-item list-group-item-action dropdown-toggle">Paginas</a>
+                    <ul class="collapse list-unstyled" id="subMenuPaginas">
+                        <li class="bg-light">
+                            <a class="list-group-in list-group-item list-group-item-action"
+                                href="pages.html">Estaticas</a>
+                        </li>
+                        <li class="bg-light">
+                            <a class="list-group-in list-group-item list-group-item-action"
+                                href="posts.html">Posts</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#subMenuUsers" data-toggle="collapse" aria-expanded="false"
+                        class=" bg-light list-group-item list-group-item-action dropdown-toggle">Usuarios</a>
+                    <ul class="collapse list-unstyled" id="subMenuUsers">
+                        <li class="bg-light">
+                            <a class="list-group-in list-group-item list-group-item-action" href="#">Todas</a>
+                        </li>
+                        <li class="bg-light">
+                            <a class="list-group-in list-group-item list-group-item-action"
+                                href="newuser.html">Nuevo</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#subMenuTheme" data-toggle="collapse" aria-expanded="false"
+                        class=" bg-light list-group-item list-group-item-action dropdown-toggle">Plantillas</a>
+                    <ul class="collapse list-unstyled" id="subMenuTheme">
+                        <li class="bg-light">
+                            <a class="list-group-in list-group-item list-group-item-action" href="#">Todas</a>
+                        </li>
+                        <li class="bg-light">
+                            <a class="list-group-in list-group-item list-group-item-action"
+                                href="newTheme.html">Nueva</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="list-group-item list-group-item-action" href="media.html">Medios</a>
+                </li>
+                <li class="bg-light">
+                    <a class="list-group-item list-group-item-action" href="#">Shortcuts</a>
+                </li>
+
+                <li class="bg-light">
+                    <a class="list-group-item list-group-item-action" href="#">Comentarios</a>
+                </li>
+            </ul>
+        </div>
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->

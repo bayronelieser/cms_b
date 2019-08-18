@@ -11,3 +11,16 @@ function colorear(elemento) {
     }
 
 }
+
+var users = [
+    {user: 'admin1', pass: 'admin1'}, {user:'usnore', pass:'usnore'}, {user:'usre', pass:'usre'}
+];
+
+//Registro
+function login(){
+    let user = $('#email').val();
+    let pass = $('#pass1').val();
+    document.getElementById('username').value = user;
+    $('#pass').val(pass);
+}
+

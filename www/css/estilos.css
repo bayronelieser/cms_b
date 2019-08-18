@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(188, 199, 211);
+    background-color: rgb(212, 218, 218);
     font-family: 'Source Sans Pro', sans-serif;
     font-family: 'Quicksand', sans-serif;
 }
@@ -57,3 +57,11 @@ input.Ok{
     border: rgb(41, 218, 41) 2px solid;
  
  }
+
+ #logo{
+     width: 5rem;
+
+ }
+#navbarSupportedContent, .navbar{
+background-color: #56C4C5
+}

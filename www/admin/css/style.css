@@ -100,7 +100,7 @@ i{
 	margin-bottom: 1rem;
 }
 
-#crear-entradas{
+#crear-entradas ,#crear-page{
 	width: 80% !important;
 	margin-left: auto !important;
 	margin-right: auto !important;
@@ -125,11 +125,11 @@ i{
 	width: 100% !important;
 }
 
-#guardar-entrada{
+#guardar-pagina, #guardar-entrada{
 	position: relative;
 	width: 10rem;
 	margin-right: 0rem !important;
-	
+	background-color: #41B6A2;
 }
 
 #img-post ,#selectCatEntrada{
@@ -190,7 +190,7 @@ body{
 }
 
 #tbl-users{
-	background-color: #fff;
+	background-color: #BCC7D3;
 	width: 34rem;
 	margin: 5rem auto;
 	padding: 2rem;
@@ -244,4 +244,8 @@ a{
 
 .list-group-in {
 	width: 10rem !important;
+}
+
+#btn-new-page{
+	width:10rem;
 }

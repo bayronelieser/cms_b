@@ -7,13 +7,20 @@ var categorias_media = ['Imagenes', 'Videos', 'Archivos genéricos'];
     }
 })();
 
-var src_imagenes = ['../img/1.jpg', '../img/2.jpg', '../img/3.jpg', '../img/4.jpg', '../img/5.jpg',
-    '../img/6.jpg', '../img/7.jpg', '../img/8.jpg',];
+
+
+
+// var src_imagenes = ['../img/1.webp', '../img/2.webp', '../img/3.webp', '../img/4.webp', '../img/5.webp',
+//     '../img/6.webp', '../img/7.webp', '../img/8.webp',];
 
 var src_Videos = ['../img/pastor.mp4'];
 
 //Mostrar miniaturas por categorias
 function mostrarMiniaturas() {
+    var src_imagenes = [];
+    for (i = 1; i < 50; i++) {
+        src_imagenes[i] = `../img/${i}.webp`;
+    }
     document.getElementById('img-miniaturas').innerHTML = '';
     document.getElementById('video-miniaturas').innerHTML = '';
 
@@ -91,4 +98,15 @@ function guardarCategoria() {
     console.log(cat_entradas);
 }
 
+//Pinta los campos si se dejan vacios para advertir al usuario
+function colorear(elemento) {
+    if (elemento.value == '') {
+        $(elemento).removeClass('Ok');
+        $(elemento).addClass('error');
+        console.log('error')
+    } else {
+        $(elemento).removeClass('error');
+        $(elemento).addClass('Ok');
+    }
 
+}

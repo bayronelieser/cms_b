@@ -8,14 +8,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Usuarios</title>
+    <title>New Page</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Estilos de la sidebar y el navbar -->
     <link href="../css/simple-sidebar.css" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Source+Sans+Pro&display=swap" rel="stylesheet">
     <!-- Estilos del contenido -->
     <link rel="stylesheet" href="../css/style.css">
@@ -125,59 +124,35 @@
                     </ul>
                 </div>
             </nav>
-            <!-- Contenido apartir de aqui ------->
+
             <div class="container-fluid">
-                <div id="users" class="container">
-                    <table id="tbl-users">
-                        <thead>
-                            <th style="text-align: center" colspan="2">Registrar usuarios</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Nombre usuario:</td>
-                                <td><input onkeyup="colorear(this)" onblur="colorear(this)" class="form-control format"
-                                        type="text" placeholder="username"></td>
-                            </tr>
-                            <tr>
-                                <td>Correo electronico:</td>
-                                <td><input onkeyup="colorear(this)" onblur="colorear(this)" class="form-control format"
-                                        type="text" placeholder="correo"></td>
-                            </tr>
-                            <tr>
-                                <td>Contraseña:</td>
-                                <td><input onkeyup="colorear(this)" onblur="colorear(this)" class="form-control format"
-                                        type="password" placeholder="contraseña"></td>
-                            </tr>
-                            <tr>
-                                <td>Nombres:</td>
-                                <td><input onkeyup="colorear(this)" onblur="colorear(this)" class="form-control format"
-                                        type="text" placeholder="nombres"></td>
-                            </tr>
-                            <tr>
-                                <td>Apellidos:</td>
-                                <td><input onkeyup="colorear(this)" onblur="colorear(this)" class="form-control format"
-                                        type="text" placeholder="apellidos"></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <select class="form-control" name="" id="roles">
-                                        <option value="0">Roles</option>
-                                    </select>
-                                </td>
-                                <td><a href="rol.html" class="form-control" type="button">Nuevo rol</a></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <button id="guardarUsuario" class="form-control" type="button">Guardar</button>
-                                </td>
-                            </tr>
+                <!-- Contenido apartir de aqui ------->
+                <h4 style="text-align: center">Paginas</h4>
+                <a href="newpage.html"><button id="btn-new-page" class="form-control" type="button">Nueva
+                        pagina</button></a>
 
-                        </tbody>
-                    </table>
-                </div>
+                <table class="table">
+                    <thead>
+                        <th>Titulo</th>
+                        <th>Autor</th>
+                        <th>Comentarios</th>
+                        <th>Fecha</th>
+                        <th>Activa(S/N)</th>
+                    </thead>
+                    <tbody id="tbl-paginas">
+                        <tr>
+                            <td>La revolucion</td>
+                            <td>user1</td>
+                            <td>4</td>
+                            <td>11-11-19</td>
+                            <td>S</td>
+                        </tr>
+                    </tbody>
+                </table>
 
+                <!-- Contenido Hasta de aqui ------->
             </div>
-            <!-- Contenido Hasta de aqui ------->
+
         </div>
         <!-- /#page-content-wrapper -->
 
@@ -187,8 +162,8 @@
     <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.js"></script>
-    <script src="../js/usuarios.js"></script>
+    <script src="../ckEditor/ckeditor.js"></script>
+    <script src="../js/controlador.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>
