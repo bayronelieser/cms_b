@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Categorias de entradas</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos de la sidebar y el navbar -->
+    <link href="../css/simple-sidebar.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- Estilos del contenido -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/medios.css">
+
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+                <div class="sidebar-heading">
+                    <img id="logo" src="../img/logo.png" alt="" class="rounded-circle">
+                </div>
+                <div class="list-group list-group-flush">
+                    <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+                </div>
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#homeEntradas" data-toggle="collapse" aria-expanded="false"
+                            class=" bg-light list-group-item list-group-item-action dropdown-toggle">Entradas</a>
+                        <ul class="collapse list-unstyled" id="homeEntradas">
+                            <li class="bg-light">
+                                <a class="list-group-in list-group-item list-group-item-action"  href="#">Todas</a>
+                            </li>
+                            <li class="bg-light">
+                                <a class="list-group-in list-group-item list-group-item-action"  href="newentrada.html">Nueva</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#subMenuPaginas" data-toggle="collapse" aria-expanded="false"
+                            class=" bg-light list-group-item list-group-item-action dropdown-toggle">Paginas</a>
+                        <ul class="collapse list-unstyled" id="subMenuPaginas">
+                            <li class="bg-light">
+                                <a class="list-group-in list-group-item list-group-item-action" href="#">Todas</a>
+                            </li>
+                            <li class="bg-light">
+                                <a class="list-group-in list-group-item list-group-item-action" href="">Nueva</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#subMenuUsers" data-toggle="collapse" aria-expanded="false"
+                            class=" bg-light list-group-item list-group-item-action dropdown-toggle">Usuarios</a>
+                        <ul class="collapse list-unstyled" id="subMenuUsers">
+                            <li class="bg-light">
+                                <a class="list-group-in list-group-item list-group-item-action" href="#">Todas</a>
+                            </li>
+                            <li class="bg-light">
+                                <a class="list-group-in list-group-item list-group-item-action" href="newuser.html">Nuevo</a>
+                            </li>
+                        </ul>
+                    </li>
+    
+                    <li>
+                        <a class="list-group-item list-group-item-action" href="media.html">Medios</a>
+                    </li>
+                    <li class="bg-light">
+                        <a class="list-group-item list-group-item-action"  href="#">Shortcuts</a>
+                    </li>
+    
+                    <li class="bg-light">
+                        <a class="list-group-item list-group-item-action"  href="#">Comentarios</a>
+                    </li>
+                </ul>
+            </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">User<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Log Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid" id="content-galery">
+                <!-- Contenido apartir de aqui ------->
+                <div class="row container-fluid" id="contenidoGaleria">
+
+                    <div class="col-12 col-sm-3 col-md-3">
+                        <h1>Medios</h1>
+                    </div>
+                    <div class="col-12 col-sm-2 col-md-2">
+                        <button id="NuevoFile" onclick="subirArchivo()" type="button"
+                            class="form-control">Nuevo</button>
+                    </div>
+                    <div class="col-12 col-sm-7 col-md-7">
+                        <input id="search" type="text" class="form-control" placeholder="Buscar">
+                    </div>
+                </div>
+
+                <div id="subirArchivo" style="display: none">
+                    <input type="file" class="form-control">
+                </div>
+
+                <select class="form-control" onchange="mostrarMiniaturas();" id="selectCat">
+                    <option value="0">--Categoria--</option>
+                </select>
+
+                <hr>
+
+                <section id="contenido-miniaturas" class="container-fluid">
+                    <div id="img-miniaturas" class="row">
+                        <!-- Aqui se mostraran las imagenes de miniaturas -->
+                    </div>
+
+                    <div id="video-miniaturas" class="row">
+
+                    </div>
+
+                    <div id="file-miniaturas" class="row">
+                        <div class="file-miniatura col-md-1">
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contenido Hasta de aqui ------->
+            </div>
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../ckEditor/ckeditor.js"></script>
+    <script src="../js/controlador.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+</body>
+
+</html>

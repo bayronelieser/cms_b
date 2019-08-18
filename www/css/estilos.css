@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(188, 199, 211);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#login{
+    border: 1px solid #fff;
+    width: 22rem;
+    margin: 10% auto;
+    height: 28rem;
+    padding: 0;
+    background-color: #fff;
+}
+
+#form-tittle{
+    background-color:#5F9EA0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin : 0;
+    height: 3rem;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.formato{
+    margin: 2rem 1rem;
+    box-sizing: border-box;
+    width: 20rem;
+}
+
+#remember{
+    margin-left: 1rem;
+}
+#recuperar{
+    margin-right: 1rem;
+}
+
+#btn-login{
+    border:2px solid  cadetblue;
+    
+}
+
+#registrase{
+    margin: 1rem; 
+    
+}
+
+input.error{
+    border: #f03838 2px solid;
+ 
+ }
+
+input.Ok{
+    border: rgb(41, 218, 41) 2px solid;
+ 
+ }

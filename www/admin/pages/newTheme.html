@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Nueva Plantilla</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos de la sidebar y el navbar -->
+    <link href="../css/simple-sidebar.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../highlight/styles/default.css">
+    <!-- Estilos del contenido -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">
+                <img id="logo" src="../img/logo.png" alt="" class="rounded-circle">
+            </div>
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+            </div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeEntradas" data-toggle="collapse" aria-expanded="false"
+                        class=" bg-light list-group-item list-group-item-action dropdown-toggle">Entradas</a>
+                    <ul class="collapse list-unstyled" id="homeEntradas">
+                        <li class="bg-light">
+                            <a class="list-group-in list-group-item list-group-item-action" href="#">Todas</a>
+                        </li>
+                        <li class="bg-light">
+                            <a class="list-group-in list-group-item list-group-item-action"
+                                href="newentrada.html">Nueva</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#subMenuPaginas" data-toggle="collapse" aria-expanded="false"
+                        class=" bg-light list-group-item list-group-item-action dropdown-toggle">Paginas</a>
+                    <ul class="collapse list-unstyled" id="subMenuPaginas">
+                        <li class="bg-light">
+                            <a class="list-group-in list-group-item list-group-item-action" href="#">Todas</a>
+                        </li>
+                        <li class="bg-light">
+                            <a class="list-group-in list-group-item list-group-item-action" href="#">Nueva</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#subMenuUsers" data-toggle="collapse" aria-expanded="false"
+                        class=" bg-light list-group-item list-group-item-action dropdown-toggle">Usuarios</a>
+                    <ul class="collapse list-unstyled" id="subMenuUsers">
+                        <li class="bg-light">
+                            <a class="list-group-in list-group-item list-group-item-action" href="#">Todas</a>
+                        </li>
+                        <li class="bg-light">
+                            <a class="list-group-in list-group-item list-group-item-action"
+                                href="newuser.html">Nuevo</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#subMenuTheme" data-toggle="collapse" aria-expanded="false"
+                        class=" bg-light list-group-item list-group-item-action dropdown-toggle">Plantillas</a>
+                    <ul class="collapse list-unstyled" id="subMenuTheme">
+                        <li class="bg-light">
+                            <a class="list-group-in list-group-item list-group-item-action" href="#">Todas</a>
+                        </li>
+                        <li class="bg-light">
+                            <a class="list-group-in list-group-item list-group-item-action"
+                                href="newTheme.html">Nueva</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="list-group-item list-group-item-action" href="media.html">Medios</a>
+                </li>
+                <li class="bg-light">
+                    <a class="list-group-item list-group-item-action" href="#">Shortcuts</a>
+                </li>
+
+                <li class="bg-light">
+                    <a class="list-group-item list-group-item-action" href="#">Comentarios</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">User<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Log Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid">
+                <!-- Contenido apartir de aqui ------->
+                <div id="crear-entradas" class="container">
+                    <h5>Crear nueva plantilla</h5>
+                    <div class="row">
+                        <div class="col-12 col-xs-2 col-md-2">
+                            <p>Titulo: </p>
+                        </div>
+                        <div class="col-12 col-xs-10 col-md-10"><input id="titulo" type="" class="form-control"
+                                placeholder="Titulo de la entrada"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-2">
+                            <p>Descripccion:</p>
+                        </div>
+                        <div class="col-12 col-md-10"><input id="autor" type="text" class="form-control"
+                                placeholder="Descripcion">
+                        </div>
+                    </div>
+
+                    <div id="editor" class="row">
+                        <div id="editor-css" class="col-6">
+                            <textarea name="highlight-css" id="highlight-css" cols="50" rows="20"></textarea>
+                        </div>
+                        <div class="col-6">
+                            <pre><code id="ventana-css" class="css">
+                           
+                            </code></pre>
+                        </div>
+                        <button type="button" id="probar-css">Probar</button>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-2">
+                            <p>Imagen:</p>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <input id="img-post" class="" type="file" value="Imagen">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <select name="selectCatEntrada" id="selectCatEntrada" class="form-control">
+                            <option value="0">--Categoria--</option>
+                        </select>
+                        <a href="newcat.html"><button class="form-control" id="btn-new-categoria">Nueva
+                                categoria</button></a>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <p>Permitir comentarios:</p>
+                        </div>
+                        <div class="col-1 col-md-7">
+                            <input type="checkbox" name="comentarios" id="comentarios">
+                        </div>
+                    </div>
+                    <button id="guardar-entrada" class="form-control btn btn-primary">Guardar entrada</button>
+                </div>
+
+                <!-- Contenido Hasta de aqui ------->
+            </div>
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+    <script>
+        (function mostrarCss() {
+            var hola = document.getElementById('highlight-css').value;
+            console.log(hola);
+            document.getElementById("ventana-css").innerHTML = `
+       
+            ${hola}
+            @media only screen and (max-width: 600px) {
+                #form-categories{
+                    width: 90% !important; 
+                }
+            }
+            @media only screen and (min-width: 600px) and (max-width: 900px) {
+                #form-categories{
+                    width: 80% !important; 
+                }
+            }
+
+            /*Themes o plantillas*/
+            #editor-css , #mostrar-css{
+                width: 100rem !important;
+            }
+        `
+
+        })()
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../ckEditor/ckeditor.js"></script>
+    <script src="../highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/controlador.js"></script>
+
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+</body>
+
+</html>
