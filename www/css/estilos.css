@@ -4,6 +4,9 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 
+a{
+	text-decoration: none !important;
+}
 #login{
     border: 1px solid #fff;
     width: 22rem;

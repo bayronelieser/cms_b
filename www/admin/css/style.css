@@ -4,6 +4,10 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 
+a{
+	text-decoration: none;
+}
+
 /* Biblioteca */
 #search{
 	width: 100%;
