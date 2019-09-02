@@ -1,11 +1,11 @@
 {
-    "title": "Simple Sidebar",
-    "name": "startbootstrap-simple-sidebar",
+    "title":"cms bayron",
+    "name": "cms_bayron",
     "version": "5.1.1",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
-    "description": "A simple sidbar navigation HTMl template built with Bootstrap",
+    "description": "",
     "keywords": [
         "css",
         "sass",
@@ -30,7 +30,9 @@
     },
     "dependencies": {
         "bootstrap": "4.3.1",
-        "jquery": "3.4.1"
+        "g": "^2.0.1",
+        "jquery": "3.4.1",
+        "nodemon": "^1.19.1"
     },
     "devDependencies": {
         "browser-sync": "2.26.7",
