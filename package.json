@@ -1,43 +1,23 @@
 {
-    "title":"cms bayron",
-    "name": "cms_bayron",
-    "version": "5.1.1",
-    "scripts": {
-        "start": "node_modules/.bin/gulp watch"
-    },
-    "description": "",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
-    ],
-    "homepage": "https://startbootstrap.com/template-overviews/simple-sidebar",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/issues",
-        "email": "feedback@startbootstrap.com"
-    },
-    "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-simple-sidebar.git"
-    },
-    "dependencies": {
-        "bootstrap": "4.3.1",
-        "g": "^2.0.1",
-        "jquery": "3.4.1",
-        "nodemon": "^1.19.1"
-    },
-    "devDependencies": {
-        "browser-sync": "2.26.7",
-        "del": "^4.1.1",
-        "gulp": "4.0.2",
-        "merge-stream": "2.0.0"
-    }
+  "name": "cms_b",
+  "version": "1.0.0",
+  "description": "Proyecto CMS FAPER",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bayronelieser/cms_b.git"
+  },
+  "author": "Bayron Elieser Ayala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bayronelieser/cms_b/issues"
+  },
+  "homepage": "https://github.com/bayronelieser/cms_b#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  }
 }

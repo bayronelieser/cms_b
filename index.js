@@ -1,10 +1,10 @@
 var express = require("express");
-        var app = express();
-        var port = 3333;
+var app = express();
 
-        //Exponer una carpeta como publica para archivos estaticos
-        app.use(express.static("www"));
+app.use(express.static("www"));
+app.set('views', './views');
+app.set('view engine', 'pug');
 
-        app.listen(port, function(){
-            console.log("Servidor levantado en el puerto:", port);
-        });
+app.listen(8888, function(){
+    console.log("Servidor levantado el el puerto 8888");
+});
