@@ -1,0 +1,36 @@
+<% include templates/headerPersonalizado %>
+
+<body>
+    <div class="wrapper" id="">
+        <div class="row">
+            <div class="col-md-4" id="personalizar-page">
+                <h5>Personalizacion de la pagina</h5>
+                <p>Encabezado generico</p>
+                <input class="form-control" placeholder="Enzabezado" type="text">
+                <p>Pie de pagina generico</p>
+                <input class="form-control" placeholder="Footer" type="text">
+                <p>Subir favicon</p>
+                <input class="form-control" placeholder="favicon" type="file" value="Subir favicon">
+                <br><br>
+                <p>Subir archivo</p>
+                <input class="form-control" placeholder="Logotipo" type="file" value="Subir logotipo">
+                <p>Descripción</p>
+                <input class="form-control" placeholder="Descripción" type="">
+                <p>Palabras clave</p>
+                <input class="form-control" placeholder="Palabras clave" type="text">
+                <div>
+                    <p>Css personalizado</p>
+                    <textarea name="" onkeyup="iluminarCss()" id="css-personalizado" cols="46" rows="10"></textarea>
+                </div>
+                <p>Javascript Personalizado</p>
+                <textarea name="" id="javascript-personalizado" cols="46" rows="10"></textarea>
+            </div>
+            <div class="col-md-8">
+
+            </div>
+        </div>
+
+    </div>
+    <!-- /#wrapper -->
+
+    <% include templates/footerPersonalizado %>

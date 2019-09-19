@@ -1,0 +1,55 @@
+<% include templates/header  %>
+<!-- Contenido apartir de aqui ------->
+<div class="container-fluid">
+    <div id="users" class="container">
+        <table id="tbl-users">
+            <thead>
+                <th style="text-align: center" colspan="2">Registrar usuarios</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nombre usuario:</td>
+                    <td><input onkeyup="colorear(this)" onblur="colorear(this)" class="form-control format" type="text"
+                            placeholder="username"></td>
+                </tr>
+                <tr>
+                    <td>Correo electronico:</td>
+                    <td><input onkeyup="colorear(this)" onblur="colorear(this)" class="form-control format" type="text"
+                            placeholder="correo"></td>
+                </tr>
+                <tr>
+                    <td>Contraseña:</td>
+                    <td><input onkeyup="colorear(this)" onblur="colorear(this)" class="form-control format"
+                            type="password" placeholder="contraseña"></td>
+                </tr>
+                <tr>
+                    <td>Nombres:</td>
+                    <td><input onkeyup="colorear(this)" onblur="colorear(this)" class="form-control format" type="text"
+                            placeholder="nombres"></td>
+                </tr>
+                <tr>
+                    <td>Apellidos:</td>
+                    <td><input onkeyup="colorear(this)" onblur="colorear(this)" class="form-control format" type="text"
+                            placeholder="apellidos"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="form-control" name="" id="roles">
+                            <option value="0">Roles</option>
+                        </select>
+                    </td>
+                    <td><a href="rol.html" class="form-control" type="button">Nuevo rol</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button id="guardarUsuario" class="form-control" type="button">Guardar</button>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<!-- Contenido Hasta de aqui ------->
+<% include templates/footer  %>

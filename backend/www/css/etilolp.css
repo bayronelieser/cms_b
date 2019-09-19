@@ -1,0 +1,50 @@
+/*Estilos del landing page*/
+
+#header-landing-page{
+    background-color: #2E92D6;
+    width: 100%;
+    height: 150vh;
+    padding: 3rem;
+    font-size: 1.5rem;
+    color: white;
+    align-content: center;
+}
+
+#contenedor1{
+    padding: 1rem;
+    border: 1px solid #2E92D6;
+    width: 90%;
+    margin-top: 5rem;
+}
+
+#logo{
+    width: 20rem;
+    margin-bottom: 5rem;
+
+}
+.col-6{
+    padding: 4rem;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+p{
+    margin: 6rem 0;
+}
+
+#a-github{
+    background-color: #52B586;
+    color: white;
+    height: 6rem;
+    font-size: 2rem;
+    text-align:  center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+#footer{
+    background-color: #404040;
+    margin: 0rem 0.1rem;
+    color: white}

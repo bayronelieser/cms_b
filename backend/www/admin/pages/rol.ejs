@@ -1,0 +1,34 @@
+<% include templates/header  %>
+<!-- Contenido apartir de aqui ------->
+<div class="container-fluid">
+    <div id="rol" class="container">
+        <form id="form-roles" action="#" class="form-control">
+            <h3>Roles</h3>
+            <input id="nombreRol" type="text" class="form-control" placeholder="Nombre rol">
+            <textarea id="DescripcionRol" type="text" class="form-control" placeholder="Descripcion" cols="30"
+                rows="4"></textarea>
+            <button id="guardar-categoria" class="form-control">Guardar</button>
+            <h6>Roles existentes</h6>
+
+            <!-- Mostrar categorias existentes -->
+            <table class="table table-striped">
+                <thead>
+                    <th>Roles</th>
+                    <th>Descripcion</th>
+                    <th>Paginas</th>
+                    <th>Accion</th>
+                </thead>
+                <tbody id="tbl-roles">
+
+                </tbody>
+            </table>
+            <hr>
+            <a href="newuser.html"><button type="button" id="volverCat" class="form-control">Volver</button></a>
+
+        </form>
+    </div>
+
+</div>
+<!-- Contenido Hasta de aqui ------->
+
+<% include templates/footer  %>

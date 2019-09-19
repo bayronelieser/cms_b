@@ -1,0 +1,47 @@
+div(class="bg-light border-right" id="sidebar-wrapper")
+    div(class="sidebar-heading")
+        img(id="logo" src="img/logo.png" alt="" class="rounded-circle")
+        div(class="list-group list-group-flush")
+            a(href="#" class="list-group-item list-group-item-action bg-light") Dashboard
+        ul(class="list-unstyled components")
+            li(class="active")
+                a(href="#homeEntradas" data-toggle="collapse" aria-expanded="false"
+                    class=" bg-light list-group-item list-group-item-action dropdown-toggle") Entradas
+                ul(class="collapse list-unstyled" id="homeEntradas")
+                    li(class="bg-light")
+                        a(class="list-group-in list-group-item list-group-item-action" href="#") Todas
+                    li(class="bg-light")
+                        a(class="list-group-in list-group-item list-group-item-action"
+                            href="pages/newentrada.html") Nueva
+            li(class="active")
+                a(href="#subMenuPaginas" data-toggle="collapse" aria-expanded="false"
+                    class=" bg-light list-group-item list-group-item-action dropdown-toggle") Paginas
+                ul(class="collapse list-unstyled" id="subMenuPaginas")
+                    li(class="bg-light")
+                        a(class="list-group-in list-group-item list-group-item-action" href="pages/pages.html") Estaticas
+                    li(class="bg-light")
+                        a(class="list-group-in list-group-item list-group-item-action" href="pages/posts.html") Posts
+            li(class="active")
+                a(href="#subMenuUsers" data-toggle="collapse" aria-expanded="false"
+                    class=" bg-light list-group-item list-group-item-action dropdown-toggle") Usuarios
+                ul(class="collapse list-unstyled" id="subMenuUsers")
+                    li(class="bg-light")
+                        a(class="list-group-in list-group-item list-group-item-action" href="#") Todos
+                    li(class="bg-light")
+                        a(class="list-group-in list-group-item list-group-item-action"
+                            href="pages/newuser.html") Nuevo
+            li(class="active")
+                a(href="#subMenuTheme" data-toggle="collapse" aria-expanded="false"
+                    class=" bg-light list-group-item list-group-item-action dropdown-toggle") Plantillas
+                ul(class="collapse list-unstyled" id="subMenuTheme")
+                    li(class="bg-light")
+                        a(class="list-group-in list-group-item list-group-item-action" href="#") Todas
+                    li(class="bg-light")
+                        a(class="list-group-in list-group-item list-group-item-action"
+                            href="pages/newTheme.html") Nueva
+            li(class="active")
+                a(class="list-group-item list-group-item-action" href="pages/media.html") Medios
+            li(class="bg-light")
+                a(class="list-group-item list-group-item-action" href="#") Shortcuts
+            li(class="bg-light")
+                a(class="list-group-item list-group-item-action" href="#") Comentarios
