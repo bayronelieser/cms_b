@@ -1,0 +1,68 @@
+<% include templates/header  %>
+<title>Nueva entrada</title>
+<div class="container-fluid">
+    <!-- Contenido apartir de aqui ------->
+    <div id="crear-entradas" class="container">
+        <h4 style="text-align: center; margin: 1rem">Ingresar datos para la nueva entrada</h4>
+        <div class="row">
+            <div class="col-12 col-xs-2 col-md-2">
+                <p>Titulo: </p>
+            </div>
+            <div class="col-12 col-xs-10 col-md-10"><input onblur="colorear(this)" onkeyup="colorear(this)" id="titulo"
+                    type="" class="form-control" placeholder="Titulo de la entrada"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-2">
+                <p>Autor:</p>
+            </div>
+            <div class="col-12 col-md-10"><input onblur="colorear(this)" onkeyup="colorear(this)" id="autor" type="text"
+                    class="form-control" placeholder="Autor">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-2">
+                <p>Fecha:</p>
+            </div>
+            <div class="col-12 col-md-10"><time id="date-post" datetime="fecha"></time></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-2">
+                <p>Hora:</p>
+            </div>
+            <div class="col-12 col-md-10"><time id="hour-post" datetime="hora"></time></div>
+        </div>
+        <div id="editor" class="row">
+            <textarea name="contentPost" id="contentPost" cols="30" rows="10"></textarea>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-2">
+                <p>Imagen:</p>
+            </div>
+            <div class="col-12 col-md-10">
+                <input onblur="colorear(this)" onkeyup="colorear(this)" id="img-post" class="" type="file"
+                    value="Imagen">
+            </div>
+        </div>
+        <div class="row">
+            <select name="selectCatEntrada" id="selectCatEntrada" class="form-control">
+                <option value="0">--Categoria--</option>
+            </select>
+            <a href="/new-category" class="form-control btn-info" id="new-category">Nueva
+                    categoria</a>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <p>Permitir comentarios:</p>
+            </div>
+            <div class="col-1 col-md-7">
+                <input onblur="colorear(this)" onkeyup="colorear(this)" type="checkbox" name="comentarios"
+                    id="comentarios">
+            </div>
+        </div>
+        <button id="guardar-entrada" class="form-control btn btn-primary">Guardar entrada</button>
+    </div>
+
+    <!-- Contenido Hasta de aqui ------->
+</div>
+
+<% include templates/footer  %>

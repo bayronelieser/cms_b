@@ -1,0 +1,55 @@
+<% include templates/header  %>
+<title>Nueva categoria de entradas</title>
+<!-- Contenido apartir de aqui ------->
+<div class="container-fluid">
+    <div id="categorias" class="container">
+        <form id="form-categories" action="#" class="form-control">
+            <h3>Categorias</h3>
+        
+            <input id="nombreCat" onkeypress="keyPres()" type="text" class="form-control"
+                placeholder="Ingrese la nueva categoria">
+            <button id="guardar-categoria" onclick="guardarCategoria()" class="form-control">Guardar</button>
+            <button id="btn-actualizar"  type="button" onclick="actualizarCatEntrada(`${$('#idCat').val()}`)" 
+                    class="form-control" style="display:none; width: 10rem; margin: 1rem 0;">Actualizar</button>
+            <input id="idCat" type="text" style="display: none">
+            <h6>Categorias existentes</h6>
+
+            <!-- Mostrar categorias existentes -->
+            <table class="table table-striped">
+                <thead>
+                    <th>Categoria</th>
+                    <th colspan="2">Acción</th>
+                </thead>
+                <tbody id="catExistentes">
+                        <!-- onblur="`${$('#btn-actualizar').focus()`} -->
+                    <!-- //Modal para mostrar mensaje -->
+                    <div class="modal fade" id="mostrarMensaje" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button style="text-align: right" type="button" class="close" data-dismiss="modal"
+                                        aria-hidden="true">&times;</button>
+                                    
+                                </div>
+                                <div class="modal-body h4" id="mensaje">
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#" data-dismiss="modal" class="btn btn-danger">Cerrar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                </tbody>
+            </table>
+            <hr>
+            <a href="/new-post"><button type="button" id="volverCat" class="form-control volver">Volver</button></a>
+
+        </form>
+    </div>
+
+</div>
+<!-- Contenido Hasta de aqui ------->
+
+<% include templates/footer  %>

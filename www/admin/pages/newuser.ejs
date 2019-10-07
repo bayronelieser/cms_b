@@ -1,0 +1,57 @@
+<% include templates/header  %>
+<title>Nuevo usuario</title>
+<!-- Contenido apartir de aqui ------->
+<div class="container-fluid">
+    <div id="users" class="container">
+        <table id="tbl-users">
+            <thead>
+                <th style="text-align: center" colspan="2">Registrar usuarios</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nombres:</td>
+                    <td><input id="firstname" onkeyup="colorear(this)" onblur="colorear(this)"
+                            class="form-control format" type="text" placeholder="nombres"></td>
+                </tr>
+                <tr>
+                    <td>Apellidos:</td>
+                    <td><input id="lastname" onkeyup="colorear(this)" onblur="colorear(this)"
+                            class="form-control format" type="text" placeholder="apellidos"></td>
+                </tr>
+                <tr>
+                    <td>Correo electronico:</td>
+                    <td><input id="email" onkeyup="colorear(this)" onblur="colorear(this)" class="form-control format"
+                            type="text" placeholder="correo"></td>
+                </tr>
+                <tr>
+                    <td>Contraseña:</td>
+                    <td><input id="password" onkeyup="colorear(this)" onblur="colorear(this)"
+                            class="form-control format" type="password" placeholder="contraseña"></td>
+                </tr>
+                <tr>
+                    <td>Nombre usuario:</td>
+                    <td><input id="username" onkeyup="colorear(this)" onblur="colorear(this)"
+                            class="form-control format" type="text" placeholder="username"></td>
+                </tr>
+                <tr>
+                    <td><a href="/admin/roles/new-rol" class="form-control btn-dark" type="button" style="text-decoration: none">Nuevo rol</a></td>
+                    <td>
+                        <select class="form-control" name="rolesUser" id="rolesUser">
+                            <option value="0">Roles</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button id="guardarUsuario" onclick="registrarUsuario()" class="btn btn-info"
+                            type="button">Guardar</button>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<!-- Contenido Hasta de aqui ------->
+<% include templates/footer  %>

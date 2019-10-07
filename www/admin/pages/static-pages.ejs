@@ -1,0 +1,32 @@
+<% include templates/header  %>
+<title>Páginas estáticas</title>
+
+<div class="container-fluid">
+    <!-- Contenido apartir de aqui ------->
+    <h4 style="text-align: center">Páginas</h4>
+    <a href="/new-static-page" id="new-static-page" class="form-control btn-info">Nueva
+        página</a>
+
+    <table class="table">
+        <thead>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Comentarios</th>
+            <th>Fecha</th>
+            <th>Activa(S/N)</th>
+        </thead>
+        <tbody id="tbl-paginas">
+            <tr>
+                <td>La revolucion</td>
+                <td>user1</td>
+                <td>4</td>
+                <td>11-11-19</td>
+                <td>S</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Contenido Hasta de aqui ------->
+</div>
+
+<% include templates/footer  %>

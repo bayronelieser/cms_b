@@ -1,0 +1,102 @@
+<% include templates/header  %>
+<title>Nueva página de entradas</title>
+
+<div class="container-fluid">
+    <!-- Contenido apartir de aqui ------->
+    <div id="crear-page" class="container">
+
+        <div class="row">
+            <div class="col-12 col-xs-2 col-md-2">
+                <p>Titulo: </p>
+            </div>
+            <div class="col-12 col-xs-10 col-md-10"><input onblur="colorear(this)" onkeyup="colorear(this)"
+                    id="titulo-pagina" type="" class="form-control" placeholder="Titulo de pagina"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-xs-2 col-md-2">
+                <p>Titulo en el menú: </p>
+            </div>
+            <div class="col-12 col-xs-10 col-md-10"><input onblur="colorear(this)" onkeyup="colorear(this)"
+                    id="titulo-menu" type="" class="form-control" placeholder="Titulo en el menú"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-2">
+                <p>Usuario:</p>
+            </div>
+            <div class="col-12 col-md-10"><input onblur="colorear(this)" onkeyup="colorear(this)" id="autor" type="text"
+                    class="form-control" placeholder="Usuario">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-2">
+                <p>Descripcion:</p>
+            </div>
+            <div class="col-12 col-md-10">
+                <textarea placeholder="Descripcion" name="descripcion-pagina" id="descripcion-pagina" cols="50"
+                    rows="5"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-2">
+                <p>Palabras clave:</p>
+            </div>
+            <div class="col-12 col-md-10">
+                <input type="text" id="palabras-clave" class="form-control">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-2">
+                <p>Pagina padre:</p>
+            </div>
+            <div class="col-12 col-md-10">
+                <input type="text" id="pagina-padre" class="form-control">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-2">
+                <p>Url:</p>
+            </div>
+            <div class="col-12 col-md-10">
+                <input type="text" id="url-page" class="form-control">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-2 col-md-2 ">
+                <p>Encabezado</p>
+            </div>
+            <div class="col-2 col-md-1">
+                <input onblur="colorear(this)" onkeyup="colorear(this)" type="checkbox" name="Encabeado"
+                    id="encabezado">
+            </div>
+            <div class="col-2 col-md-2 ">
+                <p>Pie de pagina</p>
+            </div>
+            <div class="col-2 col-md-1">
+                <input onblur="colorear(this)" onkeyup="colorear(this)" type="checkbox" name="pie-pagina"
+                    id="pie-pagina">
+            </div>
+            <div class="col-2 col-md-2 ">
+                <p>Menú o un breadcrumb</p>
+            </div>
+            <div class="col-2 col-md-1">
+                <input onblur="colorear(this)" onkeyup="colorear(this)" type="checkbox" name="menú" id="menu">
+            </div>
+            <div class="col-2 col-md-2">
+                <p>Permitir comentarios:</p>
+            </div>
+            <div class="col-1 col-md-1">
+                <input onblur="colorear(this)" onkeyup="colorear(this)" type="checkbox" name="comentarios"
+                    id="comentarios">
+            </div>
+
+        </div>
+        <button id="guardar-pagina" class="form-control btn btn-primary">Guardar pagina</button>
+    </div>
+
+    <!-- Contenido Hasta de aqui ------->
+</div>
+
+<% include templates/footer  %>
